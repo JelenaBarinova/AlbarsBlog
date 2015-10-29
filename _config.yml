@@ -1,0 +1,63 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink: /:title/
+
+# Setup
+title:               Albars
+tagline:             Technical Blog
+url:                 http://blog.albars.eu
+#paginate:            1
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Lena Barinova
+  url:               https://twitter.com/jfiodorova
+  email:             fiodorova.jelena@gmail.com
+
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      lang: en
+      layout: default
+  -
+    scope:
+      path: _posts/ru
+    values:
+      layout: default
+      lang: ru
+  -
+    scope:
+      path: _posts/lt
+    values:
+      layout: default
+      lang: lt
+  -
+    scope:
+      path: _posts/en/pages
+    values:
+      type: pages
+      desc: "Some description"
+  -
+    scope:
+      path: _posts/ru/pages
+    values:
+      type: pages
+      desc: "Descripton goes here"
+  -
+    scope:
+      path: _posts/lt/pages
+    values:
+      type: pages
+      desc: "Aprasymai cia"
