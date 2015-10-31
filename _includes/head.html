@@ -1,0 +1,31 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=0.85">
+  <meta name="description" content="{% if page.desc %}{{ page.desc | strip_html }}{% else %}{{ page.excerpt | strip_html | replace: "[[", " ("  | replace: "]]", ")" | strip_newlines }}{% endif %}">
+  <title>{{page.title | strip_html}} </title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/bootstrap.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+  
+  <!-- Google Web Font Embed -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.ico" />
+  
+  <!-- RSS -->
+   <link rel="alternate" href="/rss.xml" type="application/rss+xml" />
+  {% capture hide %}
+    {% assign posts=site.posts | where:"date", page.date %}
+    {% for post in posts %}
+      {% if post.lang != page.lang %}
+        {% assign url = post.url %}
+        {% assign lang = post.lang %}
+      {% endif %}
+    {% endfor %}
+  {% endcapture %}{% if url %}
+  <link rel="alternate" hreflang="{{ lang }}" href="{{ url }}" ></link>{% endif %}
+</head>

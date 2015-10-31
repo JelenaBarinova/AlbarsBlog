@@ -1,39 +1,39 @@
 en:
   logo:
-    title: "albars"
+    title: "home"
     url:   "/"
   journal:
-    title: "blog"
-    url:   "/index.html"
+    title: "news"
+    url:   "/news/"
   projects:
     title: "trainings"
     url:   "/trainings/"
   about:
     title: "about"
-    url:   "/about/"
+    url:   "http://albars.eu"
 ru:
   logo:
-    title: "albars"
-    url:   "/основной/"
+    title: "начало"
+    url:   "/osnovnoj/"
   journal:
     title: "новости"
-    url:   "/основной/"
+    url:   "/novosti/"
   projets:
     title: "траининг"
-    url:   "/траининг/"
+    url:   "/training/"
   about:
     title: "о нас"
-    url:   "/o-нас/"
+    url:   "http://albars.eu"
 lt:
   logo:
-    title: "albars"
-    url:   "/pagrindinis/"
+    title: "pradžia"
+    url:   "/pradinis/"
   journal:
     title: "naujienos"
-    url:   "/pagrindinis/"
+    url:   "/naujienos/"
   projets:
     title: "mokymai"
     url:   "/mokymai/"
   about:
     title: "apie mus"
-    url:   "/apie-mus/"
+    url:   "http://albars.eu"
