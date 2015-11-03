@@ -3,7 +3,7 @@ en:
     title: "home"
     url:   "/"
   journal:
-    title: "news"
+    title: "all posts"
     url:   "/news/"
   projects:
     title: "trainings"
@@ -13,13 +13,13 @@ en:
     url:   "http://albars.eu"
 ru:
   logo:
-    title: "начало"
+    title: "главная"
     url:   "/osnovnoj/"
   journal:
-    title: "новости"
+    title: "все записи"
     url:   "/novosti/"
   projets:
-    title: "траининг"
+    title: "тренинги"
     url:   "/training/"
   about:
     title: "о нас"
@@ -29,7 +29,7 @@ lt:
     title: "pradžia"
     url:   "/pradinis/"
   journal:
-    title: "naujienos"
+    title: "tinklaraštis"
     url:   "/naujienos/"
   projets:
     title: "mokymai"

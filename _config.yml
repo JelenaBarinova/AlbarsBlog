@@ -6,7 +6,7 @@ permalink: /:title/
 # Setup
 title:               Albars
 tagline:             Technical Blog
-url:                 http://blog.albars.eu
+url:                 http://jelenabarinova.gitjub.io/AlbarsBlog
 #paginate:            1
 baseurl:             ""
 
@@ -23,6 +23,9 @@ author:
   url:               https://twitter.com/jfiodorova
   email:             fiodorova.jelena@gmail.com
 
+gems:
+  - jekyll-sitemap
+  
 google_tracking_id:
 
 defaults:

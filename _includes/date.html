@@ -3,7 +3,7 @@
   {% assign d = include.date | date: "%-d" %}
   {% if page.lang == 'fr' %}
     {{ d }}{% if d == "1" %}<sup>er</sup>{% endif %}
-  {% else %}
+  {% elsif page.lang == 'en' %}
     {{ d }}<sup>{% case d %}
       {% when '1' or '21' or '31' %}st
       {% when '2' or '22' %}nd
@@ -13,21 +13,21 @@
   {% endif %}
 {% endif %}
 
-{% if page.lang == 'fr' %}
+{% if page.lang == 'lt' %}
  {% assign m = include.date | date: "%-m" %}
  {% case m %}
-    {% when  '1' %} janvier
-    {% when  '2' %} février
-    {% when  '3' %} mars
-    {% when  '4' %} avril
-    {% when  '5' %} mai
-    {% when  '6' %} juin
-    {% when  '7' %} juillet
-    {% when  '8' %} août
-    {% when  '9' %} septembre
-    {% when '10' %} octobre
-    {% when '11' %} novembre
-    {% when '12' %} décembre
+    {% when  '1' %} Sausis
+    {% when  '2' %} Vasaris
+    {% when  '3' %} Kovas
+    {% when  '4' %} Balandis
+    {% when  '5' %} Gegužė
+    {% when  '6' %} Birželis
+    {% when  '7' %} Liepa
+    {% when  '8' %} Rugpjūtis
+    {% when  '9' %} Rugsėjis
+    {% when '10' %} Spalis
+    {% when '11' %} Lapkritis
+    {% when '12' %} Gruodis
   {% endcase %}
 {% else %}
   {{ include.date | date: " %B"}}

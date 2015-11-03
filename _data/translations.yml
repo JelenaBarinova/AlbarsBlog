@@ -1,18 +1,33 @@
 en:
   created: "Published on the"
   author: "by"
-  description: "Personal website, made with real pieces of code: articles about Jekyll, Raspberry Pi, R..."
   copyright: Copyright
+  description: ""
   publishedOn: "Pubslihed on"
+  trainingsRealatedBlogPosts: "Trainings related blog posts"
+  categories:
+    trainings: "Trainings"
+    cloud: "Cloud"
+    everything: "Everything"
 ru:
-  created: "Publié le"
-  author: "par"
-  description: "Site personnel, avec des vrais bouts de code dedans : articles sur Jekyll, Raspberry Pi, R..."
+  created: "Созданно"
+  author: "автор"
   copyright: "Авторские права"
+  description: ""
   publishedOn: "Дата публикации"
+  trainingsRealatedBlogPosts: "С обучением связанные сообщения"
+  categories:
+    trainings: "Обучение"
+    cloud: "Облачные вычисления"
+    everything: "Обо всем"
 lt:
-  created: "Publié le"
-  author: "par"
-  description: "Site personnel, avec des vrais bouts de code dedans : articles sur Jekyll, Raspberry Pi, R..."
+  created: "Sukurtas"
+  author: "autorius"
   copyright: "Teisės saugomos"
+  description: ""
   publishedOn: "Publikacijos data"
+  trainingsRealatedBlogPosts: "Įrašai, susiję su mokymais"
+  categories:
+    trainings: "Mokymai"
+    cloud: "Debesų kompiuterija"
+    everything: "Apie viską"
